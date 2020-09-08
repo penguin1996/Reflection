@@ -1,4 +1,6 @@
-import reflection.Student;
+package src;
+
+import src.reflection.Student;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
@@ -13,7 +15,7 @@ public class Main {
         System.out.println("获取Class对象中的字段名：");
         getField();
         System.out.println("获取Class对象中的构造方法名：");
-        getConstrucitor();
+        getConstructor();
         System.out.println("获取Class对象中的方法名：");
         getMethod();
         System.out.println("通过反射机制实例化对象：");
@@ -28,7 +30,7 @@ public class Main {
      */
     private static void getClassName() throws ClassNotFoundException {
         // 1.通过字符串获取Class对象，这个字符串必须带上完整路径名
-        Class studentClass1 = Class.forName("reflection.Student");
+        Class studentClass1 = Class.forName("src.reflection.Student");
         // 2.通过类的class属性
         Class studentClass2 = Student.class;
         // 3.通过对象的getClass()函数
@@ -51,7 +53,7 @@ public class Main {
      */
     private static void getField() throws ClassNotFoundException {
         // 1.通过字符串获取Class对象，这个字符串必须带上完整路径名
-        Class studentClass = Class.forName("reflection.Student");
+        Class studentClass = Class.forName("src.reflection.Student");
         // 1.获取所有声明的字段
         Field[] declaredFieldList = studentClass.getDeclaredFields();
         for (Field declaredField : declaredFieldList) {
@@ -67,9 +69,9 @@ public class Main {
     /**
      *获取构造方法同样包含了两个 API：用于获取所有构造方法的getDeclaredConstructors 和用于获取公有构造方法的 getConstructors
      */
-    private  static void getConstrucitor() throws ClassNotFoundException {
+    private  static void getConstructor() throws ClassNotFoundException {
         // 1.通过字符串获取Class对象，这个字符串必须带上完整路径名
-        Class studentClass = Class.forName("reflection.Student");
+        Class studentClass = Class.forName("src.reflection.Student");
         // 1.获取所有声明的构造方法
         Constructor[] declaredConstructorList = studentClass.getDeclaredConstructors();
         for (Constructor declaredConstructor : declaredConstructorList) {
@@ -91,7 +93,7 @@ public class Main {
      */
     private static void getMethod() throws ClassNotFoundException {
         // 1.通过字符串获取Class对象，这个字符串必须带上完整路径名
-        Class studentClass = Class.forName("reflection.Student");
+        Class studentClass = Class.forName("src.reflection.Student");
         // 1.获取所有声明的函数
         Method[] declaredMethodList = studentClass.getDeclaredMethods();
         for (Method declaredMethod : declaredMethodList) {
@@ -118,7 +120,7 @@ public class Main {
      */
     private static void getInstance() throws Exception {
         // 1.通过字符串获取Class对象，这个字符串必须带上完整路径名
-        Class studentClass = Class.forName("reflection.Student");
+        Class studentClass = Class.forName("src.reflection.Student");
 
         // 2.获取声明的构造方法，传入所需参数的类名，如果有多个参数，用','连接即可
         Constructor studentConstructor = studentClass.getDeclaredConstructor(String.class);

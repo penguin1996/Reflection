@@ -1,4 +1,4 @@
-package reflection;
+package src.reflection;
 
 /**
  * @ClassName Student
