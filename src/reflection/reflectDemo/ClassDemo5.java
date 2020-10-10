@@ -9,8 +9,5 @@ public class ClassDemo5 {
 		// TODO Auto-generated method stub
 		ClassUtil.printConMessage("hello");
 		ClassUtil.printConMessage(new Integer(1));
-		
-
 	}
-
 }

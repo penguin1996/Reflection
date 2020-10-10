@@ -108,13 +108,9 @@ public class Main {
 
     /**
      * 先用第一种全路径获取 Class 的方法获取到了 Student 的 Class 对象
-     *
      * 然后反射调用它的私有构造方法 private Student(String studentName)，构建出 newInstance
-     *
      * 再将其公有字段 studentAge 设置为 10
-     *
      * 最后反射调用其私有方法 show，传入参数 “message”，并打印出这个方法的返回值。
-     *
      * 其中，setAccessible 函数用于动态获取访问权限，Constructor、Field、Method 都提供了此方法，让我们得以访问类中的私有成员。
      * @throws Exception
      */

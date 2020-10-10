@@ -5,7 +5,6 @@ import java.lang.reflect.Method;
 public class BeanUtil {
 	/**
 	 * 根据标准javaBean对象的属性名获取其属性值
-	 * 
 	 * @param obj
 	 * @param propertyName
 	 * @return

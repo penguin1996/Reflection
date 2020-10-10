@@ -17,9 +17,8 @@ public class ClassDemo1 {
 		 * 万事万物皆对象，
 		 * 类也是对象，是Class类的实例对象
 		 * 这个对象我们称为该类的类类型
-		 * 
 		 */
-		
+
 		//不管c1  or c2都代表了Foo类的类类型，一个类只可能是Class类的一个实例对象
 		System.out.println(c1 == c2);
 		

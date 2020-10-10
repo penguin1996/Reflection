@@ -10,7 +10,5 @@ public class ClassDemo4 {
 		ClassUtil.printFieldMessage("hello");
 		System.out.println("=============");
 		ClassUtil.printFieldMessage(new Integer(1));
-
 	}
-
 }

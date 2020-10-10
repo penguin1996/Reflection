@@ -59,6 +59,7 @@ public class ClassUtil {
 			System.out.println(typeName+" "+fieldName);
 		}
 	}
+
 	/**
 	 * 打印对象的构造函数的信息
 	 * @param obj

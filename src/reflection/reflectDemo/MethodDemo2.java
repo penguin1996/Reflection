@@ -11,7 +11,6 @@ public class MethodDemo2 {
 		 * 通过键盘输入命令执行操作
 		 * 输入update命令就调用update方法
 		 * 输入delete命令就调用delete方法
-		 * ...
 		 */
 		try {
 			BufferedReader br = new BufferedReader(
